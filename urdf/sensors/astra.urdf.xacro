@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot name="sensor_astra" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find saturnbot_description)/urdf/saturnbot_gazebo.urdf.xacro"/>
   <xacro:include filename="$(find saturnbot_description)/urdf/saturnbot_properties.urdf.xacro"/>
 
   <!-- Xacro properties -->
@@ -8,7 +7,7 @@
   <xacro:property name="astra_depth_rel_rgb_py" value="0.0250" />
   <xacro:property name="astra_cam_rel_rgb_py"   value="-0.0125" />
   <xacro:property name="astra_dae_display_scale"   value="1" />
-  <xacro:property name="parent" value="base_link" />
+  
   <!-- Parameterised in part by the values in saturnbot_properties.urdf.xacro -->
   <xacro:macro name="sensor_astra" params="parent">
     <joint name="camera_joint" type="fixed">
