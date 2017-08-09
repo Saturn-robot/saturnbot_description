@@ -6,8 +6,8 @@
   <xacro:property name="astra_cam_py" value="-0.0125"/>
   <xacro:property name="astra_depth_rel_rgb_py" value="0.0250" />
   <xacro:property name="astra_cam_rel_rgb_py"   value="-0.0125" />
-  <xacro:property name="astra_dae_display_scale"   value="1" />
-  
+  <xacro:property name="astra_dae_display_scale"   value="0.5" />
+
   <!-- Parameterised in part by the values in saturnbot_properties.urdf.xacro -->
   <xacro:macro name="sensor_astra" params="parent">
     <joint name="camera_joint" type="fixed">

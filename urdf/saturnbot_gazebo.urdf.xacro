@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot name="saturnbot_gazebo" xmlns:xacro="http://ros.org/wiki/xacro">
-
+<xacro:property name="M_PI" value="3.1415926535897931" />
 <!-- materials -->
 <gazebo reference="base_link">
   <material>Gazebo/Orange</material>
@@ -25,10 +25,10 @@
   <robotNamespace>/</robotNamespace>
   <leftJoint>base_to_wheel_left</leftJoint>
   <rightJoint>base_to_wheel_right</rightJoint>
-  <wheelSeparation>4</wheelSeparation>
-  <wheelDiameter>0.1</wheelDiameter>
+  <wheelSeparation>0.166</wheelSeparation>
+  <wheelDiameter>0.065</wheelDiameter>
   <robotBaseFrame>base_footprint</robotBaseFrame>
-  <wheelTorque>5</wheelTorque>
+  <wheelTorque>0.35</wheelTorque>
   <topicName>cmd_vel</topicName>
   <commandTopic>cmd_vel</commandTopic>
   <odometryTopic>odom</odometryTopic>
