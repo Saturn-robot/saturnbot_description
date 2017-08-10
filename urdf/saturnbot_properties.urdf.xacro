@@ -24,7 +24,7 @@
    -->
 	<property name="cam_px" value="-0.04" />
 <!--	<property name="cam_py" value="-0.0125" /> Y varies for different configurations. get sets in sensors_urdf -->
-	<property name="cam_pz" value="0.12" />
+	<property name="cam_pz" value="0.20" />
 	<property name="cam_or" value="0" />
 	<property name="cam_op" value="0" />
 	<property name="cam_oy" value="0" />

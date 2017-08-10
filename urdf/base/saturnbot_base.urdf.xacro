@@ -41,7 +41,7 @@
 			<geometry>
       				<box size="0.119 0.185 0.05"/>
      			</geometry>
-			<origin rpy="0 0 1.54" xyz="0 0 0.021"/>
+			<origin rpy="0 0 1.54" xyz="0 0 0.046"/>
 			<material name="white">
 				<color rgba="1 1 1 1"/>
 			</material>
@@ -112,7 +112,7 @@
  <joint name="base_to_wheel_left" type="continuous">
    <parent link="base_link"/>
    <child link="wheel_left"/>
-   <origin rpy="-1.5707 0 0" xyz="-0.071 0.083 0"/>
+   <origin rpy="-1.5707 0 0" xyz="-0.071 0.083 0.0325"/>
    <axis xyz="0 0 1" />
  </joint>
 
@@ -122,14 +122,14 @@
    <limit effort="100" velocity="100" />
    <parent link="base_link"/>
    <child link="wheel_right"/>
-   <origin rpy="-1.5707 0 0" xyz="-0.071 -0.083 0"/>
+   <origin rpy="-1.5707 0 0" xyz="-0.071 -0.083 0.0325"/>
 </joint>
 
  <joint name="base_to_caster_wheel" type="continuous">
    <parent link="base_link"/>
    <axis xyz="0 0 1" />
    <child link="caster_wheel"/>
-   <origin rpy="-1.5707 0 0" xyz="0.071 0 0"/>
+   <origin rpy="-1.5707 0 0" xyz="0.071 0 0.021"/>
  </joint>
 
 </robot>
